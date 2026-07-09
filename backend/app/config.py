@@ -24,11 +24,12 @@ class Settings:
         # when present, and fall back to the individual vars for local dev.
         url = os.getenv("DATABASE_URL")
         if url:
-            # Railway/Heroku sometimes give "postgres://" - SQLAlchemy needs "postgresql+psycopg2://"
+            # Railway/Heroku sometimes give "postgres://" - normalize and use
+            # pg8000 (pure Python, no system libpq dependency needed)
             if url.startswith("postgres://"):
-                url = url.replace("postgres://", "postgresql+psycopg2://", 1)
+                url = url.replace("postgres://", "postgresql+pg8000://", 1)
             elif url.startswith("postgresql://"):
-                url = url.replace("postgresql://", "postgresql+psycopg2://", 1)
+                url = url.replace("postgresql://", "postgresql+pg8000://", 1)
             return url
 
         return (
