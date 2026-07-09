@@ -27,8 +27,7 @@ app.include_router(products.router)
 app.include_router(enquiries.router)
 
 # ---- Frontend: multi-page site, each page its own route ----
-FRONTEND_DIR = Path(__file__).resolve().parent.parent.parent / "frontend"
-
+FRONTEND_DIR = Path(__file__).resolve().parent.parent / "frontend"
 app.mount("/styles", StaticFiles(directory=FRONTEND_DIR / "styles"), name="styles")
 app.mount("/scripts", StaticFiles(directory=FRONTEND_DIR / "scripts"), name="scripts")
 
