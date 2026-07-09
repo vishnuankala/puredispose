@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products — PureDispose</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500;1,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<nav>
+  <a href="index.html" style="text-decoration:none"><div class="logo">Pure<span>Dispose</span></div></a>
+  <ul class="nav-links">
+    <li><a href="#products">Products</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="index.html#why">Why Us</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Order Now</a>
+</nav>
+
+<section class="products" id="products">
+  <div class="products-head">
+    <div>
+      <div class="section-tag">Our Range</div>
+      <div class="section-title">Every Table,<br>Every Occasion</div>
+    </div>
+    <div class="filter-tabs">
+      <button class="ftab active" onclick="filterCards('all',this)">All</button>
+      <button class="ftab" onclick="filterCards('cups',this)">Cups</button>
+      <button class="ftab" onclick="filterCards('plates',this)">Plates</button>
+      <button class="ftab" onclick="filterCards('others',this)">Others</button>
+    </div>
+  </div>
+  <div class="products-grid" id="prod-grid">
+
+    <div class="prod-card" data-cat="cups">
+      <div class="prod-img ill-water">
+        <svg width="90" height="110" viewBox="0 0 90 110" fill="none">
+          <ellipse cx="45" cy="22" rx="32" ry="9" fill="#90caf9" opacity=".5"/>
+          <path d="M13 22 L20 98 Q45 108 70 98 L77 22 Z" fill="#64b5f6" opacity=".9"/>
+          <ellipse cx="45" cy="22" rx="32" ry="9" fill="#bbdefb"/>
+          <path d="M20 42 Q45 48 70 42" stroke="#fff" stroke-width="1.5" fill="none" opacity=".5"/>
+          <ellipse cx="45" cy="97" rx="25" ry="7" fill="#42a5f5" opacity=".4"/>
+        </svg>
+        <div class="prod-badge">Eco</div>
+      </div>
+      <div class="prod-body">
+        <div class="prod-cat">Cups</div>
+        <div class="prod-name">Water Cups</div>
+        <div class="prod-desc">Lightweight, leak-proof paper cups perfect for cold water, juice & soft drinks at any event.</div>
+        <div class="prod-sizes">
+          <span class="size-tag">100ml</span><span class="size-tag">150ml</span><span class="size-tag">200ml</span>
+        </div>
+        <div class="prod-footer">
+          <div class="prod-price">
+            <span class="price-from">Starting from</span>
+            <span class="price-val">₹1.00 <span class="price-unit">/ pc</span></span>
+          </div>
+          <button class="prod-btn" onclick="addToCart('Water Cups')">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="prod-card" data-cat="cups">
+      <div class="prod-img ill-tea">
+        <svg width="90" height="110" viewBox="0 0 90 110" fill="none">
+          <ellipse cx="45" cy="22" rx="30" ry="8" fill="#ffcc80" opacity=".5"/>
+          <path d="M15 22 L23 92 Q45 102 67 92 L75 22 Z" fill="#ffa726" opacity=".85"/>
+          <ellipse cx="45" cy="22" rx="30" ry="8" fill="#ffe0b2"/>
+          <path d="M75 40 Q88 40 88 55 Q88 70 75 65" stroke="#ffcc80" stroke-width="3" fill="none"/>
+          <path d="M35 10 Q38 2 42 8" stroke="#f57c00" stroke-width="1.5" fill="none" opacity=".5" stroke-linecap="round"/>
+          <path d="M45 8 Q48 0 52 6" stroke="#f57c00" stroke-width="1.5" fill="none" opacity=".4" stroke-linecap="round"/>
+          <ellipse cx="45" cy="92" rx="22" ry="6" fill="#e65100" opacity=".3"/>
+        </svg>
+        <div class="prod-badge hot">Popular</div>
+      </div>
+      <div class="prod-body">
+        <div class="prod-cat">Cups</div>
+        <div class="prod-name">Tea Cups</div>
+        <div class="prod-desc">Heat-resistant paper cups with insulating walls — ideal for hot tea, coffee & beverages.</div>
+        <div class="prod-sizes">
+          <span class="size-tag">80ml</span><span class="size-tag">100ml</span><span class="size-tag">120ml</span>
+        </div>
+        <div class="prod-footer">
+          <div class="prod-price">
+            <span class="price-from">Starting from</span>
+            <span class="price-val">₹1.50 <span class="price-unit">/ pc</span></span>
+          </div>
+          <button class="prod-btn" onclick="addToCart('Tea Cups')">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="prod-card" data-cat="plates">
+      <div class="prod-img ill-tiffin">
+        <svg width="110" height="90" viewBox="0 0 110 90" fill="none">
+          <rect x="12" y="20" width="86" height="55" rx="6" fill="#81c784" opacity=".8"/>
+          <rect x="12" y="20" width="86" height="14" rx="6" fill="#a5d6a7"/>
+          <line x1="12" y1="47" x2="98" y2="47" stroke="#fff" stroke-width="1.5" opacity=".4"/>
+          <line x1="55" y1="47" x2="55" y2="75" stroke="#fff" stroke-width="1.5" opacity=".4"/>
+          <rect x="38" y="16" width="14" height="8" rx="3" fill="#66bb6a"/>
+          <rect x="58" y="16" width="14" height="8" rx="3" fill="#66bb6a"/>
+        </svg>
+        <div class="prod-badge">Eco</div>
+      </div>
+      <div class="prod-body">
+        <div class="prod-cat">Plates</div>
+        <div class="prod-name">Tiffin Plates</div>
+        <div class="prod-desc">3-compartment meal plates for lunches, canteens & tiffin service. Strong, grease-resistant.</div>
+        <div class="prod-sizes">
+          <span class="size-tag">3-Comp</span><span class="size-tag">4-Comp</span><span class="size-tag">5-Comp</span>
+        </div>
+        <div class="prod-footer">
+          <div class="prod-price">
+            <span class="price-from">Starting from</span>
+            <span class="price-val">₹3.00 <span class="price-unit">/ pc</span></span>
+          </div>
+          <button class="prod-btn" onclick="addToCart('Tiffin Plates')">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="prod-card" data-cat="plates">
+      <div class="prod-img ill-plate">
+        <svg width="110" height="90" viewBox="0 0 110 90" fill="none">
+          <ellipse cx="55" cy="50" rx="44" ry="30" fill="#ffe082" opacity=".6"/>
+          <ellipse cx="55" cy="50" rx="38" ry="25" fill="#ffcc02" opacity=".4"/>
+          <ellipse cx="55" cy="50" rx="28" ry="18" fill="#ffd54f" opacity=".5"/>
+          <ellipse cx="55" cy="18" rx="44" ry="10" fill="#ffe57d"/>
+        </svg>
+        <div class="prod-badge hot">Popular</div>
+      </div>
+      <div class="prod-body">
+        <div class="prod-cat">Plates</div>
+        <div class="prod-name">Round Dinner Plates</div>
+        <div class="prod-desc">Heavy-duty bagasse round plates for events, parties & outdoor catering. Microwave-safe.</div>
+        <div class="prod-sizes">
+          <span class="size-tag">7 inch</span><span class="size-tag">9 inch</span><span class="size-tag">11 inch</span>
+        </div>
+        <div class="prod-footer">
+          <div class="prod-price">
+            <span class="price-from">Starting from</span>
+            <span class="price-val">₹2.50 <span class="price-unit">/ pc</span></span>
+          </div>
+          <button class="prod-btn" onclick="addToCart('Round Plates')">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="prod-card" data-cat="others">
+      <div class="prod-img ill-bowl">
+        <svg width="100" height="90" viewBox="0 0 100 90" fill="none">
+          <path d="M10 40 Q10 80 50 80 Q90 80 90 40 Z" fill="#ce93d8" opacity=".8"/>
+          <ellipse cx="50" cy="40" rx="40" ry="12" fill="#e1bee7"/>
+          <ellipse cx="50" cy="40" rx="30" ry="8" fill="#f3e5f5" opacity=".6"/>
+          <ellipse cx="50" cy="79" rx="20" ry="5" fill="#ab47bc" opacity=".3"/>
+        </svg>
+      </div>
+      <div class="prod-body">
+        <div class="prod-cat">Bowls</div>
+        <div class="prod-name">Soup Bowls</div>
+        <div class="prod-desc">Deep-walled disposable bowls for soups, curries, desserts & snacks. Available with lids.</div>
+        <div class="prod-sizes">
+          <span class="size-tag">200ml</span><span class="size-tag">350ml</span><span class="size-tag">500ml</span>
+        </div>
+        <div class="prod-footer">
+          <div class="prod-price">
+            <span class="price-from">Starting from</span>
+            <span class="price-val">₹2.00 <span class="price-unit">/ pc</span></span>
+          </div>
+          <button class="prod-btn" onclick="addToCart('Soup Bowls')">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="prod-card" data-cat="others">
+      <div class="prod-img ill-spoon">
+        <svg width="100" height="100" viewBox="0 0 100 100" fill="none">
+          <ellipse cx="50" cy="28" rx="22" ry="18" fill="#80cbc4" opacity=".8"/>
+          <ellipse cx="50" cy="28" rx="16" ry="12" fill="#b2dfdb" opacity=".7"/>
+          <rect x="45" y="45" width="10" height="40" rx="5" fill="#4db6ac" opacity=".8"/>
+          <ellipse cx="30" cy="60" rx="8" ry="14" rx="8" fill="#80cbc4" opacity=".6" transform="rotate(-15 30 60)"/>
+          <rect x="25" y="73" width="8" height="20" rx="4" fill="#4db6ac" opacity=".6" transform="rotate(-15 25 73)"/>
+        </svg>
+      </div>
+      <div class="prod-body">
+        <div class="prod-cat">Cutlery</div>
+        <div class="prod-name">Spoon & Fork Set</div>
+        <div class="prod-desc">Sturdy CPLA & wooden cutlery sets. Smooth finish, splinter-free, perfect for meals on-the-go.</div>
+        <div class="prod-sizes">
+          <span class="size-tag">Spoon</span><span class="size-tag">Fork</span><span class="size-tag">Combo</span>
+        </div>
+        <div class="prod-footer">
+          <div class="prod-price">
+            <span class="price-from">Starting from</span>
+            <span class="price-val">₹0.80 <span class="price-unit">/ pc</span></span>
+          </div>
+          <button class="prod-btn" onclick="addToCart('Cutlery Set')">+</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="order-section" id="contact">
+  <h2>Ready to Order?</h2>
+  <p>Leave your number — our team will call you within 30 minutes with a custom quote.</p>
+  <div class="order-form">
+    <input class="order-input" type="tel" id="phone" placeholder="Enter your phone number" maxlength="10">
+    <button class="order-submit" onclick="submitOrder()">Get a Quote →</button>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-grid">
+    <div>
+      <div class="foot-brand">Pure<span>Dispose</span></div>
+      <div class="foot-desc">Premium disposable tableware for every occasion. Eco-conscious, food-safe and affordable since 2018.</div>
+    </div>
+    <div>
+      <div class="foot-title">Products</div>
+      <ul class="foot-links">
+        <li><a href="#">Water Cups</a></li>
+        <li><a href="#">Tea Cups</a></li>
+        <li><a href="#">Tiffin Plates</a></li>
+        <li><a href="#">Dinner Plates</a></li>
+        <li><a href="#">Soup Bowls</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="foot-title">Company</div>
+      <ul class="foot-links">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Bulk Orders</a></li>
+        <li><a href="#">Certifications</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="foot-title">Contact</div>
+      <ul class="foot-links">
+        <li><a href="#">📞 +91 9177695587</a></li>
+        <li><a href="#">✉️ vishnu@puredispose.in</a></li>
+        <li><a href="#">📍 Hyderabad, Telangana</a></li>
+        <li><a href="#">Mon – Sat, 9AM – 7PM</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2025 PureDispose. All rights reserved.</span>
+    <span>Made with care in India 🇮🇳</span>
+  </div>
+</footer>
+<div id="toast"></div>
+<script src="scripts/main.js"></script>
+</body>
+</html>
